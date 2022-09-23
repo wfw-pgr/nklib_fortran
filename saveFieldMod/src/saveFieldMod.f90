@@ -10,7 +10,7 @@ contains
     integer         , parameter  :: lun  = 50
     integer         , intent(in) :: LI, LJ, nComponents
     double precision, intent(in) :: Data(nComponents,LI,LJ), axis1(LI), axis2(LJ)
-    character(cLen) , intent(in) :: outFile
+    character(*)    , intent(in) :: outFile
     integer                      :: i, j, k
     character(cLen)              :: num, names, shape1, shape2, fmt
 

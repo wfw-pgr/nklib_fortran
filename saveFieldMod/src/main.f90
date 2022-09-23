@@ -1,17 +1,17 @@
 program main
   use saveFieldMod
   implicit none
-  integer, parameter :: LI=101, LJ=101, nComponents=3
+  integer, parameter :: LI=201, LJ=101, nComponents=3
   double precision   :: axis1(LI), axis2(LJ), field(nComponents,LI,LJ)
   character(300)     :: outFile = "dat/out.dat"
   integer            :: i, j
 
 
   do i=1, LI
-     axis1(i) = dble(i-1) / dble(LI-1) 
+     axis1(i) = dble(i-1) / dble(LI-1) * 2.0 - 1.0
   enddo
   do j=1, LJ
-     axis2(j) = dble(j-1) / dble(LJ-1)
+     axis2(j) = dble(j-1) / dble(LJ-1) * 1.0
   enddo
   do j=1, LJ
      do i=1, LI
