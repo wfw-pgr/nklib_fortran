@@ -6,7 +6,7 @@ object  = \
 
 FC       = gfortran
 
-FFLAGS   = -O3
+FFLAGS   = -O3 -fopenmp
 # FFLAGS  += -fno-range-check
 LDFLAGS  =
 
